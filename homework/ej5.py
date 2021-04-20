@@ -1,0 +1,1 @@
+print(input("Dime tu numero de telefono en el formato dado como ejemplo: +34-913724710-56 ")[4:13])

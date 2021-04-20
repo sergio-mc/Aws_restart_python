@@ -1,0 +1,1 @@
+print(int(input("Dime las horas trabajadas: ")) * int(input("Dime el coste por hora: ")))
