@@ -13,6 +13,7 @@ cantidadCobrada = 0
 cantidadPendiente = 0
 
 while userInput != "3":
+    cantidadPendiente = 0
     userInput = input("¿Que desea hacer? Añadir: 0 / Pagar: 1 / Ver Facturas: 2 / Salir: 3 ")
 
     if userInput == "0":
@@ -32,7 +33,7 @@ while userInput != "3":
         print("Selecciona una opcion correcta")
     
     for i in facturas:
-        cantidadPendiente = int(facturas[i])
+        cantidadPendiente += int(facturas[i])
     
     print("Cantidad total a cobrar: " + str(cantidadPendiente))
     print("Cantidad total cobrada: " + str(cantidadCobrada))
